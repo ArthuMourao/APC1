@@ -2,11 +2,17 @@
 #include <stdio.h>
 
 int main(){
-  int base = 2;
-  int altura = 3;
-  int area = base * altura /2;
+  float base;
+  float altura;
 
-  printf("A área do triangulo é %i\n",area);
+  printf("Digite o valor da Base:\n");
+  int remover_erro = scanf("%f",&base);
+  printf("Digite o valor da altura:\n");
+  remover_erro = scanf("%f",&altura);
+  
+  float area = base * altura /2;
+
+  printf("A área do triangulo é %2.2f\n",area);
   
   return 0;
 }
